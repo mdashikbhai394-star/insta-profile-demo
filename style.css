@@ -1,0 +1,122 @@
+/* THEME VARIABLES */
+:root {
+  --bg: #0f0f0f;
+  --text: #ffffff;
+  --card: #000000;
+}
+
+body.light {
+  --bg: #ffffff;
+  --text: #000000;
+  --card: #f2f2f2;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.note {
+  font-size: 13px;
+  color: #ff6b6b;
+}
+
+/* FORM */
+.form input, .form button {
+  display: block;
+  margin: 8px auto;
+  padding: 10px;
+  width: 260px;
+  border-radius: 6px;
+  border: none;
+}
+
+.form button {
+  background: #1da1f2;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* PROFILE CARD */
+.profile {
+  width: 360px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  background: var(--card);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.left {
+  margin-right: 15px;
+}
+
+.ring {
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg,#feda75,#d62976,#962fbf,#4f5bd5);
+}
+
+.ring img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #222;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* REAL BLUE TICK */
+.ig-tick {
+  width: 21px;
+  height: 21px;
+  margin-left: 1px;
+}
+
+.ig-tick svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.stats {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.download-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #25d366;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.theme-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: #1da1f2;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
